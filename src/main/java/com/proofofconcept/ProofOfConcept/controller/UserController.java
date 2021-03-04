@@ -20,4 +20,11 @@ public class UserController {
 
         return new ResponseEntity<>(userData, HttpStatus.OK);
     }
+
+    @PostMapping
+    public ResponseEntity createUser(@RequestBody HashMap<String,String> userDetails){
+        return new ResponseEntity<>(userDetails, HttpStatus.CREATED);
+    }
+
+
 }
