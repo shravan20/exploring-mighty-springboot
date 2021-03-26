@@ -2,6 +2,7 @@ package com.proofofconcept.ProofOfConcept.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 
@@ -9,6 +10,7 @@ import javax.persistence.*;
 @Setter
 @Entity
 @Table(name = "UserInfo")
+@ToString
 public class User {
     /**
      * User Entity
