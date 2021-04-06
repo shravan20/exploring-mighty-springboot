@@ -1,5 +1,5 @@
 package com.proofofconcept.ProofOfConcept.dal;
-import org.apache.tomcat.jni.Address;
+import com.proofofconcept.ProofOfConcept.entity.Address;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

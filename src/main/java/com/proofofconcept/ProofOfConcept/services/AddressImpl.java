@@ -1,7 +1,6 @@
 package com.proofofconcept.ProofOfConcept.services;
-
 import com.proofofconcept.ProofOfConcept.dal.AddressDAL;
-import org.apache.tomcat.jni.Address;
+import com.proofofconcept.ProofOfConcept.entity.Address;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

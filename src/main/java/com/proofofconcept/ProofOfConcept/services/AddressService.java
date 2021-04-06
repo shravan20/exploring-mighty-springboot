@@ -1,6 +1,7 @@
 package com.proofofconcept.ProofOfConcept.services;
 
-import org.apache.tomcat.jni.Address;
+
+import com.proofofconcept.ProofOfConcept.entity.Address;
 
 public interface AddressService {
     public Address createAddress(Address address);

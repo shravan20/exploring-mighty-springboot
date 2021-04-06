@@ -9,8 +9,8 @@ import java.util.Collection;
 
 @Getter
 @Setter
-@Document(collection = "UserAddress")
-public class UserAddress {
+@Document(collection = "Address")
+public class Address {
 
     @Id
     private String id;

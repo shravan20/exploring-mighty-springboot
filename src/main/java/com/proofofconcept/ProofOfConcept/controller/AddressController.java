@@ -1,8 +1,8 @@
 package com.proofofconcept.ProofOfConcept.controller;
 
 
+import com.proofofconcept.ProofOfConcept.entity.Address;
 import com.proofofconcept.ProofOfConcept.services.AddressService;
-import org.apache.tomcat.jni.Address;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
