@@ -4,6 +4,8 @@ package com.proofofconcept.ProofOfConcept.controller;
 import com.proofofconcept.ProofOfConcept.services.AddressService;
 import org.apache.tomcat.jni.Address;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,8 +22,9 @@ public class AddressController {
     private AddressService addressService;
 
     @PostMapping
-    public Address createAddress(@RequestBody Address address) {
-        return addressService.createAddress(address);
+    public ResponseEntity<Address> createAddress(@RequestBody Address address) {
+        System.out.println(address+"Data Received");
+        return new ResponseEntity<>(addressService.createAddress(address), HttpStatus.OK);
     }
 
 }

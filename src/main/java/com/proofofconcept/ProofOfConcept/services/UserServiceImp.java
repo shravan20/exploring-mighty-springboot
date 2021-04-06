@@ -5,6 +5,8 @@ import com.proofofconcept.ProofOfConcept.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class UserServiceImp implements UserService {
 
@@ -21,7 +23,11 @@ public class UserServiceImp implements UserService {
 
     @Override
     public User getUser(int id) {
-        return userDal.getOne(id);
+        Optional<User> data = userDal.findById(id);
+        if(data.isPresent())
+            return data.get();
+        else
+            return null;
     }
 
 }
